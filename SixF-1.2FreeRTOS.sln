@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SixF-1.2FreeRTOS", "SixF-1.2FreeRTOS\SixF-1.2FreeRTOS.vcxproj", "{FF871355-4C91-42D4-8169-994B9E42B7A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Release|VisualGDB = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF871355-4C91-42D4-8169-994B9E42B7A1}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{FF871355-4C91-42D4-8169-994B9E42B7A1}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{FF871355-4C91-42D4-8169-994B9E42B7A1}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{FF871355-4C91-42D4-8169-994B9E42B7A1}.Release|VisualGDB.Build.0 = Release|VisualGDB
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9703B76-6F4B-4A65-A40C-8DCF7D751E8F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+﻿  os_Task.c
+  Linking ../VisualGDB/Debug/SixF-1.2FreeRTOS...
+  ------------------- Memory utilization report -------------------
+  Used FLASH: 32KB out of 1024KB (3%)
+  Used SRAM: 16KB out of 128KB (12%) [-4]
+  Used CCMRAM: 0 bytes out of 64KB (0%)
