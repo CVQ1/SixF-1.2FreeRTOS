@@ -36,7 +36,7 @@ void USART1_UART_Init(void)
 		huart1.Init.OverSampling = UART_OVERSAMPLING_16;
 		if (HAL_UART_Init(&huart1) != HAL_OK)
 		{
-			_Error_Handler(__FILE__, __LINE__);
+			//_Error_Handler(__FILE__, __LINE__);
 		}
 
 

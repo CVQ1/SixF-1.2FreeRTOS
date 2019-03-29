@@ -129,8 +129,8 @@ VisualGDB/Debug/SixF-1.2FreeRTOS.o: SixF-1.2FreeRTOS.c \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\sys\string.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\stdlib.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\machine\stdlib.h \
- c:\sysgcc\arm-eabi\arm-eabi\sys-include\alloca.h usart2.h \
- PCA_H_I2C_HAL.h i2c1.h servo.h
+ c:\sysgcc\arm-eabi\arm-eabi\sys-include\alloca.h PCA_H_I2C_HAL.h i2c1.h \
+ servo.h
 
 C:/Users/15725/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32F4xxxx/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 
@@ -397,8 +397,6 @@ c:\sysgcc\arm-eabi\arm-eabi\sys-include\stdlib.h:
 c:\sysgcc\arm-eabi\arm-eabi\sys-include\machine\stdlib.h:
 
 c:\sysgcc\arm-eabi\arm-eabi\sys-include\alloca.h:
-
-usart2.h:
 
 PCA_H_I2C_HAL.h:
 

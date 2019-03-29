@@ -1,0 +1,2 @@
+startup_stm32f407xx.c:936:39:Reset_Handler	0	static
+startup_stm32f407xx.c:957:39:Default_Handler	0	static

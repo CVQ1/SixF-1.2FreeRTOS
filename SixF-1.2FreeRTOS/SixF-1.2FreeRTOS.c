@@ -30,7 +30,7 @@
 #include <../CMSIS_RTOS/cmsis_os.h>
 #include "os_Task.h"
 #include "usart1.h"
-#include "usart2.h"
+//#include "usart2.h"
 #include "PCA_H_I2C_HAL.h"
 #include "i2c1.h"
 #include "servo.h"
@@ -77,7 +77,7 @@ int main(void)
 	checkLEDInit();
 	
 	USART1_UART_Init();
-	USART2_UART_Init();
+	//USART2_UART_Init();
 	
 	I2C1_Init();
 	OLED_Init();
@@ -170,7 +170,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {	
 	if (huart->Instance == USART2)
 	{
-		UART2_Handler();
+	//	UART2_Handler();
 	}
 	else if (huart->Instance == USART1)
 	{

@@ -56,7 +56,7 @@
         <Entries>
           <KeyValue>
             <Key>com.sysprogs.arm.openocd.interface</Key>
-            <Value>interface/stlink-v2-1.cfg</Value>
+            <Value>interface/stlink-v2.cfg</Value>
           </KeyValue>
           <KeyValue>
             <Key>com.sysprogs.arm.openocd.cpu</Key>
@@ -116,7 +116,7 @@
           </KeyValue>
           <KeyValue>
             <Key>com.sysprogs.arm.openocd.quicksetup.interface</Key>
-            <Value>stlink-v2-1</Value>
+            <Value>stlink-v2</Value>
           </KeyValue>
         </Entries>
       </Configuration>
@@ -128,7 +128,31 @@
     <ValidateEndOfStackAddress>true</ValidateEndOfStackAddress>
     <StopAtEntryPoint>false</StopAtEntryPoint>
     <CheckInterfaceDrivers>true</CheckInterfaceDrivers>
-    <DynamicAnalysisSettings />
+    <DynamicAnalysisSettings>
+      <StackVerifier>
+        <VerifyStackBounds>false</VerifyStackBounds>
+        <AutoStepOutOfHook>true</AutoStepOutOfHook>
+        <StackLimitControlledByUser>false</StackLimitControlledByUser>
+        <ExplicitSizeLimit>0</ExplicitSizeLimit>
+        <ExplicitStackBase>0</ExplicitStackBase>
+        <Mode>Auto</Mode>
+      </StackVerifier>
+      <RealTimeWatch>
+        <SupportRTOSAnalysis>false</SupportRTOSAnalysis>
+        <SupportFunctionInstrumentation>false</SupportFunctionInstrumentation>
+        <MeasureOverhead>true</MeasureOverhead>
+      </RealTimeWatch>
+      <RTOSFeatures>
+        <RTOSFeatureSetting>
+          <FeatureID>com.sysprogs.analysis.thread.timing</FeatureID>
+          <Enabled>true</Enabled>
+        </RTOSFeatureSetting>
+        <RTOSFeatureSetting>
+          <FeatureID>com.sysprogs.analysis.freertos.queues</FeatureID>
+          <Enabled>true</Enabled>
+        </RTOSFeatureSetting>
+      </RTOSFeatures>
+    </DynamicAnalysisSettings>
     <EndOfStackSymbol>_estack</EndOfStackSymbol>
     <TimestampProviderTicksPerSecond>0</TimestampProviderTicksPerSecond>
   </Debug>

@@ -16,7 +16,7 @@ void I2C1_Init(void)
 	hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
 	if (HAL_I2C_Init(&hi2c1) != HAL_OK)
 	{
-		_Error_Handler(__FILE__, __LINE__);
+		//_Error_Handler(__FILE__, __LINE__);
 	}
 
 }

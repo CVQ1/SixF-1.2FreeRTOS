@@ -39,17 +39,17 @@ uint8_t PCA9685_read(uint8_t address, uint8_t addr)
 	uint8_t tx[1];
 	uint8_t data;
 		tx[0] = addr;
-//		if (HAL_I2C_Master_Transmit(&hi2c1, address, tx, 1, 10000) != HAL_OK)
-//		{
-//			while (1)
-//				;
-//		}
-//		
-//		if (HAL_I2C_Master_Receive(&hi2c1, address, &data, 1, 10000) != HAL_OK)
-//		{
-//			while (1)
-//				;
-//		}
+		if (HAL_I2C_Master_Transmit(&hi2c1, address, tx, 1, 10000) != HAL_OK)
+		{
+			while (1)
+				;
+		}
+		
+		if (HAL_I2C_Master_Receive(&hi2c1, address, &data, 1, 10000) != HAL_OK)
+		{
+			while (1)
+				;
+		}
 		
 	return data;
 }
@@ -62,11 +62,11 @@ void PCA9685_write(uint8_t address, uint8_t addr, uint8_t buffer)
 	tx[1] = buffer;
 	
 				
-//	if (HAL_I2C_Master_Transmit(&hi2c1, address, tx, 2, 10000) != HAL_OK)
-//	{
-//		while (1)
-//			;
-//	}
+	if (HAL_I2C_Master_Transmit(&hi2c1, address, tx, 2, 10000) != HAL_OK)
+	{
+		while (1)
+			;
+	}
 				
 }
 
@@ -110,7 +110,7 @@ void PCA9685_Init(void)
 	GPIO_InitStruct.Pull = GPIO_NOPULL;
 	HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 	
-	PCA9685_Enable();
+	PCA9685_Disable();
 	
 	
 	
@@ -119,6 +119,9 @@ void PCA9685_Init(void)
 
 	SetPWMFreq(PWM_Address_1, 50); 
 	SetPWMFreq(PWM_Address_0, 50); 
+	
+	//HAL_Delay(1000); 
+	
 }		
 
 

@@ -1,8 +1,9 @@
 #include "os_Task.h"
 #include "usart1.h"
-#include "usart2.h"
+//#include "usart2.h"
 #include "i2c1.h"
 #include "servo.h"
+#include "PCA_H_I2C_HAL.h"
 
 osThreadId LEDThread1Handle, LEDThread2Handle;
 osThreadId MessageprocessThreadHandle;
@@ -17,6 +18,7 @@ osMessageQId MessageQueue01Handle;
 extern BTdata BTdata1;
 uint32_t  A, B, C; //≤‚ ‘
 MassageData01  data;//≤‚ ‘
+uint32_t time=0;
 
 static void LED_Thread1(void const *argument);
 static void LED_Thread2(void const *argument);
@@ -217,9 +219,18 @@ void TimerCallback01(void const * argument)
 {
 	/* USER CODE BEGIN Callback01 */
 	//HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_13);
-	
+	if(time < 50)
+	{
+		time++;
+		
+	}
+	else if(time<52)
+	{
+		time++;
+		PCA9685_Enable();
+	}
 	osSemaphoreRelease(R_ControlBinarySemHandle);
-
+	//
 //	MassageData01 data;
 //	data.flag = tarmodeflag;
 //	data.variable = 'A';

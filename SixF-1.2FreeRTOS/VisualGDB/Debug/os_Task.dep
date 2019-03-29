@@ -130,7 +130,8 @@ VisualGDB/Debug/os_Task.o: os_Task.c os_Task.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\sys\string.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\stdlib.h \
  c:\sysgcc\arm-eabi\arm-eabi\sys-include\machine\stdlib.h \
- c:\sysgcc\arm-eabi\arm-eabi\sys-include\alloca.h usart2.h i2c1.h servo.h
+ c:\sysgcc\arm-eabi\arm-eabi\sys-include\alloca.h i2c1.h servo.h \
+ PCA_H_I2C_HAL.h
 
 os_Task.h:
 
@@ -398,8 +399,8 @@ c:\sysgcc\arm-eabi\arm-eabi\sys-include\machine\stdlib.h:
 
 c:\sysgcc\arm-eabi\arm-eabi\sys-include\alloca.h:
 
-usart2.h:
-
 i2c1.h:
 
 servo.h:
+
+PCA_H_I2C_HAL.h:

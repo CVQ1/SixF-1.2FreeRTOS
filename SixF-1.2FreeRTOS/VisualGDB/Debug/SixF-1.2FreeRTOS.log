@@ -1,6 +1,7 @@
-﻿  os_Task.c
+﻿  servo.c
+C:\Program Files (x86)\Sysprogs\VisualGDB\MSBuild\Targets\link.targets(40,2): warning : Explicit linker script in project properties (C:/Users/15725/AppData/Local/VisualGDB/EmbeddedBSPs/arm-eabi/com.sysprogs.arm.stm32/STM32F4xxxx/LinkerScripts/STM32F407VG_flash.lds) overrides the ones included in Solution Explorer
   Linking ../VisualGDB/Debug/SixF-1.2FreeRTOS...
   ------------------- Memory utilization report -------------------
-  Used FLASH: 32KB out of 1024KB (3%)
-  Used SRAM: 16KB out of 128KB (12%) [-4]
+  Used FLASH: 34KB out of 1024KB (3%)
+  Used SRAM: 16KB out of 128KB (12%)
   Used CCMRAM: 0 bytes out of 64KB (0%)

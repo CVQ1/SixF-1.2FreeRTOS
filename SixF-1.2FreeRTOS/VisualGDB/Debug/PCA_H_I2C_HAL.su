@@ -1,0 +1,7 @@
+PCA_H_I2C_HAL.c:24:6:PCA9685_Enable	8	static
+PCA_H_I2C_HAL.c:30:6:PCA9685_Disable	8	static
+PCA_H_I2C_HAL.c:36:9:PCA9685_read	32	static
+PCA_H_I2C_HAL.c:57:6:PCA9685_write	32	static
+PCA_H_I2C_HAL.c:73:6:SetPWMFreq	40	static
+PCA_H_I2C_HAL.c:90:6:SetPWM	24	static
+PCA_H_I2C_HAL.c:98:6:PCA9685_Init	32	static

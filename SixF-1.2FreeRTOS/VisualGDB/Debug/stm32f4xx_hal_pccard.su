@@ -1,0 +1,14 @@
+stm32f4xx_hal_pccard.c:141:19:HAL_PCCARD_Init	24	static
+stm32f4xx_hal_pccard.c:188:20:HAL_PCCARD_DeInit	16	static
+stm32f4xx_hal_pccard.c:211:13:HAL_PCCARD_MspInit	16	static
+stm32f4xx_hal_pccard.c:226:13:HAL_PCCARD_MspDeInit	16	static
+stm32f4xx_hal_pccard.c:262:19:HAL_PCCARD_Read_ID	40	static
+stm32f4xx_hal_pccard.c:325:19:HAL_PCCARD_Read_Sector	40	static
+stm32f4xx_hal_pccard.c:401:19:HAL_PCCARD_Write_Sector	40	static
+stm32f4xx_hal_pccard.c:474:20:HAL_PCCARD_Erase_Sector	32	static
+stm32f4xx_hal_pccard.c:531:19:HAL_PCCARD_Reset	16	static
+stm32f4xx_hal_pccard.c:569:6:HAL_PCCARD_IRQHandler	16	static
+stm32f4xx_hal_pccard.c:618:13:HAL_PCCARD_ITCallback	16	static
+stm32f4xx_hal_pccard.c:652:25:HAL_PCCARD_GetState	16	static
+stm32f4xx_hal_pccard.c:666:26:HAL_PCCARD_GetStatus	24	static
+stm32f4xx_hal_pccard.c:702:26:HAL_PCCARD_ReadStatus	24	static
