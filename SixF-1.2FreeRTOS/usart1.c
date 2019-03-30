@@ -156,10 +156,26 @@ void UART1_Handler(void)
 					else
 					{
 						BTdata1.Key |= 0x10;
+						
 						data.flag = keyflag;
 						data.variable = 1;
 						osMessagePutQueue01(data);
 					}
+					break;
+				case 0xB7: 
+					pwmflag.tarmodeflag = 'R';
+					
+					data.flag = tarmodeflag;
+					data.variable = 'R';
+					osMessagePutQueue01(data);
+					break;
+					
+				case 0xB9: 
+					pwmflag.tarmodeflag = 'L';
+					
+					data.flag = tarmodeflag;
+					data.variable = 'L';
+					osMessagePutQueue01(data);
 					break;
 				default:  break;
 				}

@@ -756,11 +756,11 @@
     <ClInclude Include="$(BSP_ROOT)\FreeRTOS\Source\portable\GCC\ARM_CM3\portmacro.h">
       <Filter>Header files\Device-specific files\FreeRTOS</Filter>
     </ClInclude>
-    <ClCompile Include="stm32f4xx_it.c">
-      <Filter>Source files\Device-specific files</Filter>
-    </ClCompile>
     <ClCompile Include="os_Task.c">
-      <Filter>Source files\Device-specific files</Filter>
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="stm32f4xx_it.c">
+      <Filter>Source files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -783,7 +783,7 @@
       <Filter>Resource files</Filter>
     </ClInclude>
     <ClInclude Include="stm32f4xx_it.h">
-      <Filter>Source files\Device-specific files</Filter>
+      <Filter>Source files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

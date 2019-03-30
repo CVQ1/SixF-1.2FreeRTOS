@@ -71,7 +71,7 @@ void os_task_init(void)
 	
 	//	osStatus timerresult = osOK ; 
 //	timerresult = 
-	osTimerStart(myTimer01Handle, 100); /* Start scheduler */  
+	osTimerStart(myTimer01Handle, 50); /* Start scheduler */  
 	//	if(osOK == timerresult)  
 	//	 osKernelStart();
 
@@ -154,7 +154,14 @@ void Messageprocess_Thread(void const *argument)
 				OLED_ShowStr(0, 0, (unsigned char*)"Tarmo: C", 2);
 				break;
 			case'F':USART1_SetLED(2, 0); USART1_SetLED(3, 1); 
-				OLED_ShowStr(0, 0, (unsigned char*)"Tarmo: F", 2); break;
+				OLED_ShowStr(0, 0, (unsigned char*)"Tarmo: F", 2); 
+				break;
+			case'R':USART1_SetLED(2, 0); USART1_SetLED(3, 1); 
+				OLED_ShowStr(0, 0, (unsigned char*)"Tarmo: R", 2); 
+				break;
+			case'L':USART1_SetLED(2, 0); USART1_SetLED(3, 1); 
+				OLED_ShowStr(0, 0, (unsigned char*)"Tarmo: L", 2); 
+				break;
 			default:  break;
 			}
 		}
@@ -173,6 +180,10 @@ void Messageprocess_Thread(void const *argument)
 				break;
 			case'F':USART1_SetLED(2, 0); USART1_SetLED(3, 1); 
 				OLED_ShowStr(0, 2, (unsigned char*)"mode : F", 2); break;
+			case'R':USART1_SetLED(2, 0); USART1_SetLED(3, 1); 
+				OLED_ShowStr(0, 2, (unsigned char*)"mode : R", 2); break;
+			case'L':USART1_SetLED(2, 0); USART1_SetLED(3, 1); 
+				OLED_ShowStr(0, 2, (unsigned char*)"mode : L", 2); break;
 			default:  break;
 			}
 		}
